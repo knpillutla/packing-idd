@@ -3,6 +3,7 @@ package com.example.packing.dto.events;
 import java.util.Map;
 
 import com.example.packing.dto.responses.PackDTO;
+import com.example.util.dto.events.BaseEvent;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 import com.fasterxml.jackson.annotation.JsonInclude;

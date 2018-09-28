@@ -1,6 +1,6 @@
 package com.example.packing.dto.responses;
 
-import com.example.packing.dto.BaseDTO;
+import com.example.util.dto.BaseDTO;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 import com.fasterxml.jackson.annotation.JsonInclude;
