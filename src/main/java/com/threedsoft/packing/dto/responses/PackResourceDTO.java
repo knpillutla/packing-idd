@@ -1,21 +1,24 @@
-package com.example.packing.dto.requests;
+package com.threedsoft.packing.dto.responses;
 
-import com.example.util.dto.BaseDTO;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
+import com.threedsoft.util.dto.WMSResourceDTO;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 @JsonAutoDetect(fieldVisibility = Visibility.ANY)
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 @NoArgsConstructor
 @Data
 @AllArgsConstructor
-public class PackCreationRequestDTO  extends BaseDTO{
+public class PackResourceDTO  extends WMSResourceDTO{
+	Long id;
 	Long pickId;
+	Long orderId;
+	Long orderLineId;
+	Integer orderLineNbr;
 	String batchNbr;
 	String busName;
 	Integer locnNbr;
@@ -25,15 +28,13 @@ public class PackCreationRequestDTO  extends BaseDTO{
 	String itemBrcd;
 	Integer qty;
 	Integer packedQty;
+	Integer statCode;
 	String fromContainer;
 	String toContainer;
-	Long orderId;
 	String orderNbr;
 	String packageNbr;
-	Integer orderLineNbr;
 	String transName;
 	String source;
 	String hostName;
 	String userId;
-	Long orderLineId;
 }

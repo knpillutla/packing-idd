@@ -1,11 +1,8 @@
-package com.example.packing.dto.responses;
+package com.threedsoft.packing.dto.requests;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.example.util.dto.BaseDTO;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
+import com.threedsoft.util.dto.WMSRequestDTO;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import lombok.AllArgsConstructor;
@@ -17,20 +14,26 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @AllArgsConstructor
-public class ContainerPacksDTO extends BaseDTO{
-	Long id;
+public class PackCreationRequestDTO  extends WMSRequestDTO{
+	Long pickId;
+	String batchNbr;
 	String busName;
 	Integer locnNbr;
 	String busUnit;
 	String company;
 	String division;
+	String itemBrcd;
 	Integer qty;
-	Integer pickedQty;
-	Integer numOfOrders;
-	Integer statCode;
+	Integer packedQty;
+	String fromContainer;
+	String toContainer;
+	Long orderId;
+	String orderNbr;
+	String packageNbr;
+	Integer orderLineNbr;
 	String transName;
 	String source;
 	String hostName;
 	String userId;
-	List<PackDTO> picks = new ArrayList<>();
+	Long orderLineId;
 }
