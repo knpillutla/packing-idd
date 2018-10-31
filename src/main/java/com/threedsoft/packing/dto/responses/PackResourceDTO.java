@@ -28,7 +28,7 @@ public class PackResourceDTO  extends WMSResourceDTO{
 	String itemBrcd;
 	Integer qty;
 	Integer packedQty;
-	Integer statCode;
+	String status;
 	String fromContainer;
 	String toContainer;
 	String orderNbr;
